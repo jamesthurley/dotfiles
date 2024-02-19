@@ -1,0 +1,7 @@
+- clean: ['~']
+
+- link:
+    ~/.bash_aliases:
+      force: true
+      path: bash_aliases
+    ~/.gitconfig: gitconfig
