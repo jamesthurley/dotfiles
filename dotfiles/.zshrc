@@ -32,15 +32,15 @@ export MACHINE
 # Source aliases
 # For a full list of active aliases, run `alias`.
 if [[ "$MACHINE" == "Linux" ]];then
-  source "./dotfiles/env/aliases-shared.sh"
-  source "./dotfiles/env/aliases-linux.sh"
-  source "./dotfiles/env/exports.sh"
-  source "./dotfiles/env/functions.sh"
+  source "$HOME/dotfiles/env/aliases-shared.sh"
+  source "$HOME/dotfiles/env/aliases-linux.sh"
+  source "$HOME/dotfiles/env/exports.sh"
+  source "$HOME/dotfiles/env/functions.sh"
 elif [[ "$MACHINE" == "Mac" ]]; then
-  source "./dotfiles/env/aliases-shared.sh"
-  source "./dotfiles/env/aliases-mac.sh"
-  source "./dotfiles/env/exports.sh"
-  source "./dotfiles/env/functions.sh"
+  source "$HOME/dotfiles/env/aliases-shared.sh"
+  source "$HOME/dotfiles/env/aliases-mac.sh"
+  source "$HOME/dotfiles/env/exports.sh"
+  source "$HOME/dotfiles/env/functions.sh"
 
   # Fix Homebrew path (required for M1 mac and above)
   export PATH="/opt/homebrew/bin:$PATH"

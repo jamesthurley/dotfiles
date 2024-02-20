@@ -1,4 +1,4 @@
-alias ll="ls -alF"
+alias ll="ls -lAF"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
