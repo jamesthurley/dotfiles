@@ -2,7 +2,7 @@
 
 # Install Autojump for Zsh
 sudo apt update
-sudo apt install autojump -y
+sudo apt install autojump fontconfig -y
 
 ./install-nerd-fonts.sh
 
