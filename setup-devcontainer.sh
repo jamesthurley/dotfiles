@@ -2,9 +2,11 @@
 
 # Install Autojump for Zsh
 sudo apt update
-sudo apt install autojump fontconfig -y
+sudo apt install autojump -y
 
-./install-nerd-fonts.sh
+# Fonts should be installed in Windows for WSL
+# sudo apt install fontconfig -y
+# ./install-nerd-fonts.sh
 
 # Install Starship
 curl -sS https://starship.rs/install.sh | sh -s -- -y
