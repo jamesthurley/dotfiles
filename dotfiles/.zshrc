@@ -46,3 +46,4 @@ elif [[ "$MACHINE" == "Mac" ]]; then
   export PATH="/opt/homebrew/bin:$PATH"
 fi
 
+eval "$(starship init zsh)"

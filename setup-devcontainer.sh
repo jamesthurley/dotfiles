@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 
+# Install Autojump for Zsh
 sudo apt update
 sudo apt install autojump -y
 
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/FiraCode.zip
-unzip FiraCode.zip -d ~/.fonts
-fc-cache -fv
+# Install FiraCode for Starship
+git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git    # warning: takes a while
+cd nerd-fonts/
+./install.sh FiraCode
 
+# Install Starship
 curl -sS https://starship.rs/install.sh | sh -s -- -y
 
 ./install-zsh.sh
