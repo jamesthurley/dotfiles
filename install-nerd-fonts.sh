@@ -9,7 +9,7 @@ declare -a fonts=(
     FiraCode
     # FiraMono
     # Go-Mono
-    # Hack
+    Hack
     # Hermit
     # JetBrainsMono
     # Meslo
