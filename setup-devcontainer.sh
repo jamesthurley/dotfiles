@@ -5,7 +5,6 @@ sudo apt update
 sudo apt install autojump fontconfig -y
 
 ./install-nerd-fonts.sh
-fc-cache -fv
 
 # Install Starship
 curl -sS https://starship.rs/install.sh | sh -s -- -y
