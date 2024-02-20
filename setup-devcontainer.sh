@@ -12,4 +12,4 @@ curl -sS https://starship.rs/install.sh | sh -s -- -y
 ./install-zsh.sh
 ./link-dotfiles.sh
 
-starship preset gruvbox-radio > ~/.config/starship.toml
+starship preset gruvbox-rainbow > ~/.config/starship.toml
