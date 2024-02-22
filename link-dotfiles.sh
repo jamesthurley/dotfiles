@@ -10,7 +10,7 @@ TARGET_DIR="$HOME"
 
 # Use find to recursively search for dotfiles in the source directory
 # Dotfiles are assumed to be any files or directories starting with a dot ('.')
-find "$SOURCE_DIR" -name ".*" -print0 | while IFS= read -r -d '' file; do
+find "$SOURCE_DIR" -name "*" -type f -print0 | while IFS= read -r -d '' file; do
     # Skip the source directory itself
     if [ "$file" == "$SOURCE_DIR" ]; then
         continue
@@ -21,11 +21,23 @@ find "$SOURCE_DIR" -name ".*" -print0 | while IFS= read -r -d '' file; do
     # Determine the target path in the user's home directory
     target="$TARGET_DIR/$relative_path"
 
-    # Create the target directory structure if it does not exist
-    mkdir -p "$(dirname "$target")"
 
-    # Create a symbolic link at the target location pointing to the source file/directory
-    ln -snf "$file" "$target"
+    echo "Processing $file"
+
+    # Create the target directory structure if it does not exist
+    if ! mkdir -p "$(dirname "$target")"; then
+        echo "Failed to create directory for $(dirname "$target")"
+        continue
+    else
+        echo "Created directory for $(dirname "$target")"
+    fi
+
+    # Create a symbolic link at the target location pointing to the source file
+    if ln -snf "$file" "$target"; then
+        echo "Linked $file to $target"
+    else
+        echo "Failed to link $file to $target"
+    fi
 done
 
 
