@@ -27,3 +27,9 @@ brew cleanup
 # Install Zsh and link dotfiles.
 ./install-zsh.sh
 ./link-dotfiles.sh
+
+# System settings
+
+## Arc/Chrome should use installed NextDNS profile, not built-in DNS client.
+defaults write company.thebrowser.Browser BuiltInDnsClientEnabled -bool false
+defaults write com.google.Chrome BuiltInDnsClientEnabled -bool false
