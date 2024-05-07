@@ -20,6 +20,8 @@ brew install slack
 brew install visual-studio-code
 brew install whatsapp
 brew install zoom
+brew install orbstack
+brew install qmk-toolbox
 
 # Remove outdated versions from the cellar.
 brew cleanup
