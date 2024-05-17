@@ -22,6 +22,7 @@ brew install whatsapp
 brew install zoom
 brew install orbstack
 brew install qmk-toolbox
+brew install --cask dotnet-sdk
 
 # Remove outdated versions from the cellar.
 brew cleanup
