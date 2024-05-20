@@ -22,7 +22,9 @@ brew install whatsapp
 brew install zoom
 brew install orbstack
 brew install qmk-toolbox
+
 brew install --cask dotnet-sdk
+brew install azure-cli
 
 # Remove outdated versions from the cellar.
 brew cleanup
@@ -36,3 +38,7 @@ brew cleanup
 ## Arc/Chrome should use installed NextDNS profile, not built-in DNS client.
 defaults write company.thebrowser.Browser BuiltInDnsClientEnabled -bool false
 defaults write com.google.Chrome BuiltInDnsClientEnabled -bool false
+
+# Set up more useful home/end key bindings.
+mkdir -p ~/Library/KeyBindings
+cp ./mac/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
