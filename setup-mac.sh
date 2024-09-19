@@ -13,6 +13,7 @@ brew install --cask font-hack-nerd-font
 brew install autojump
 brew install starship
 brew install iterm2
+brew install jq
 
 # Install apps.
 brew install dropbox
