@@ -24,6 +24,7 @@ brew install zoom
 brew install orbstack
 brew install qmk-toolbox
 brew install 1password-cli
+brew install just
 
 brew install --cask dotnet-sdk
 brew install azure-cli
