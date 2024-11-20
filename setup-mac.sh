@@ -24,7 +24,6 @@ brew install zoom
 brew install orbstack
 brew install qmk-toolbox
 brew install 1password-cli
-brew install just
 
 brew install --cask dotnet-sdk
 brew install azure-cli
@@ -35,6 +34,20 @@ brew cleanup
 # Install Zsh and link dotfiles.
 ./install-zsh.sh
 ./link-dotfiles.sh
+
+# Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cargo install cargo-insta
+cargo install cargo-modules
+cargo install cargo-public-api
+cargo install cargo-typify
+cargo install cargo-component
+
+brew install cargo-binstall
+cargo binstall cargo-nextest --secure
+
+brew install just
+
 
 # System settings
 
