@@ -14,6 +14,8 @@ brew install autojump
 brew install starship
 brew install iterm2
 brew install jq
+brew install --cask ghostty
+brew install git-lfs
 
 # Install apps.
 brew install dropbox
