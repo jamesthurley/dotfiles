@@ -1,0 +1,55 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_text_threads": false
+  },
+  "icon_theme": "Material Icon Theme",
+  "agent": {
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4"
+    },
+    "default_profile": "write",
+    "always_allow_tool_actions": true,
+    "model_parameters": [],
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4"
+    }
+  },
+  "theme": "Thrust Orange Dark",
+  "ui_font_family": "Hack Nerd Font",
+  "ui_font_size": 14,
+  "buffer_font_family": "Hack Nerd Font",
+  "buffer_font_size": 13,
+  "buffer_line_height": "standard",
+  "terminal": {
+    "font_family": "Hack Nerd Font",
+    "font_size": 13,
+    "line_height": "standard"
+  },
+  "project_panel": {
+    "indent_size": 15,
+    "auto_reveal_entries": false
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  }
+}

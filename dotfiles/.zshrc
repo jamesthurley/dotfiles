@@ -53,3 +53,5 @@ export EDITOR="code --wait"
 eval "$(starship init zsh)"
 
 eval "$(atuin init zsh)"
+
+source <(COMPLETE=zsh jj)
