@@ -3,3 +3,6 @@
 [user]
 name = "James Thurley"
 email = "james@thurley.com"
+
+[aliases]
+tug = ["bookmark", "move", "--from", "heads(::@- & bookmarks())", "--to", "@-"]

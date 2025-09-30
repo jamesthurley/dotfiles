@@ -48,7 +48,7 @@ fi
 
 export PATH="$HOME/bin:$PATH"
 
-export EDITOR="code --wait"
+export EDITOR="zed  --wait"
 
 eval "$(starship init zsh)"
 

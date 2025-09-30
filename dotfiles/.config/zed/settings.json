@@ -29,8 +29,11 @@
     "model_parameters": [],
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
-    }
+      "model": "claude-sonnet-4.5"
+    },
+    "use_modifier_to_send": true,
+    "message_editor_min_lines": 10,
+    "expand_edit_card": true
   },
   "theme": "Thrust Orange Dark",
   "ui_font_family": "Hack Nerd Font",
@@ -51,5 +54,6 @@
     "inline": {
       "enabled": true
     }
-  }
+  },
+  "max_tabs": 12
 }
